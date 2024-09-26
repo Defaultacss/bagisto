@@ -8,4 +8,12 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        outDir: 'dist',  // Ensure the output is directed to 'dist'
+        rollupOptions: {
+            output: {
+                // Customize output if needed (e.g., to specify different chunk formats or filenames)
+            }
+        }
+    }
 });
